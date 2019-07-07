@@ -34,7 +34,7 @@ export default class Lead extends Detail {
                         <p class="client-name">${this.model.from.user}</p>
                         <div class="company">
                             <img class="service" src="img/logo/linkedin.svg" />
-                            <a href="#" class="preview-link">Manager at ${this.model.from.company}</a>
+                            <a href="https://www.linkedin.com/in/carlos-seguin-lozano/" target="_blank" class="preview-link">Manager at ${this.model.from.company}</a>
                         </div>
                         <p class="contact-detail">${this.model.from.account}</p>
                         <p class="contact-detail">${this.model.from.phone}</p>
