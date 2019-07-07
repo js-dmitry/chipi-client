@@ -250,5 +250,9 @@ function renderDetail(html, panel) {
             return html`
                 <chipi-detail-gdrive .model="${panel}"></chipi-detail-gdrive>
             `;
+        case 'lead':
+                return html`
+                    <chipi-detail-lead .model="${panel}"></chipi-detail-lead>
+                `;
     }
 }

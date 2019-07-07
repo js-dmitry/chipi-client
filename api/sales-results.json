@@ -12,7 +12,7 @@
             "repliedTo": 5678,
             "score": 10,
             "channel": {
-                "type": "gmail",
+                "type": "lead",
                 "account": "oscar@chipi.io",
                 "location": [
                     "Inbox"
@@ -22,7 +22,8 @@
                 "user": "Sun Tiantian",
                 "account": "sun@chipi.io",
                 "avatar": "004",
-                "company": "Honey & Oats Ltd"
+                "company": "Honey & Oats Ltd",
+                "phone": "+55 890 998 0938"
             },
             "to": [
                 {
@@ -46,7 +47,7 @@
             "repliedTo": 5678,
             "score": 10,
             "channel": {
-                "type": "trello",
+                "type": "lead",
                 "account": "oscar@chipi.io",
                 "location": [
                     "chipi",
@@ -57,7 +58,8 @@
                 "user": "Carlos Seguin Lozano",
                 "account": "carlos@chipi.io",
                 "avatar": "012",
-                "company": "Honey & Oats Ltd"
+                "company": "Honey & Oats Ltd",
+                "phone": "+55 890 998 0938"
             },
             "to": [
                 {
@@ -82,7 +84,7 @@
             "repliedTo": 5678,
             "score": 10,
             "channel": {
-                "type": "slack",
+                "type": "lead",
                 "account": "oscar@chipi.io",
                 "location": [
                     "chipi",
@@ -93,13 +95,15 @@
                 "user": "Sun Tiantian",
                 "account": "sun@chipi.io",
                 "avatar": "010",
-                "company": "Honey & Oats Ltd"
+                "company": "Honey & Oats Ltd",
+                "phone": "+55 890 998 0938"
             },
             "to": [
                 {
                     "user": "Oscar",
                     "account": "oscar@chipi.io",
-                    "avatar": "oscar"
+                    "avatar": "oscar",
+                    "phone": "+55 890 998 0938"
                 }
             ],
             "title": "",
@@ -116,7 +120,7 @@
             "repliedTo": 5678,
             "score": 10,
             "channel": {
-                "type": "gdrive",
+                "type": "lead",
                 "account": "oscar@chipi.io",
                 "location": [
                     "My Drive",
@@ -127,7 +131,8 @@
                 "user": "Oscar Otero",
                 "account": "oscar@chipi.io",
                 "avatar": "022",
-                "company": "Honey & Oats Ltd"
+                "company": "Honey & Oats Ltd",
+                "phone": "+55 890 998 0938"
             },
             "to": [
                 {
@@ -150,7 +155,7 @@
             "repliedTo": 5678,
             "score": 10,
             "channel": {
-                "type": "gdrive",
+                "type": "lead",
                 "account": "oscar@chipi.io",
                 "location": [
                     "My Drive",
@@ -161,7 +166,8 @@
                 "user": "Jing Li",
                 "account": "jing@chipi.io",
                 "avatar": "022",
-                "company": "Honey & Oats Ltd"
+                "company": "Honey & Oats Ltd",
+                "phone": "+55 890 998 0938"
             },
             "to": [
                 {
