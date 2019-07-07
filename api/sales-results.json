@@ -1,0 +1,178 @@
+{
+    "flags": [
+        ":touched",
+        ":new",
+        ":cases",
+        ":logged today"
+    ],
+    "results": [
+        {
+            "id": 1234,
+            "type": "result",
+            "repliedTo": 5678,
+            "score": 10,
+            "channel": {
+                "type": "gmail",
+                "account": "oscar@chipi.io",
+                "location": [
+                    "Inbox"
+                ]
+            },
+            "from": {
+                "user": "Sun Tiantian",
+                "account": "sun@chipi.io",
+                "avatar": "004",
+                "company": "Honey & Oats Ltd"
+            },
+            "to": [
+                {
+                    "user": "Oscar",
+                    "account": "oscar@chipi.io",
+                    "avatar": "oscar"
+                }
+            ],
+            "title": "Re: [CHIPI UPDATE] v0.2.56 - Preview your results without leaving CHIPI!",
+            "excerpt": "Awesome, thanks for the update!",
+            "text": "Awesome, thanks for the update!",
+            "time": 1541323703,
+            "lead": "hot",
+            "action": "Call schedulled for today",
+            "comments": "2 days in trial. Contacted 4 days ago."
+        },
+        {
+            "id": 1235,
+            "type": "result",
+            "repliedTo": 5678,
+            "score": 10,
+            "channel": {
+                "type": "trello",
+                "account": "oscar@chipi.io",
+                "location": [
+                    "chipi",
+                    "Operations - 100 actions/mo"
+                ]
+            },
+            "from": {
+                "user": "Carlos Seguin Lozano",
+                "account": "carlos@chipi.io",
+                "avatar": "012",
+                "company": "Honey & Oats Ltd"
+            },
+            "to": [
+                {
+                    "user": "Oscar",
+                    "account": "oscar@chipi.io",
+                    "avatar": "oscar"
+                }
+            ],
+            "title": "Trello Integration",
+            "category": "In Progress",
+            "excerpt": "Goal Problem we are trying to solve",
+            "text": "Goal Problem we are trying to solve",
+            "time": 1541313703,
+            "lead": "hot",
+            "action": "Call schedulled for today",
+            "comments": "2 days in trial. Contacted 4 days ago."
+        },
+        {
+            "id": 4567,
+            "type": "result",
+            "repliedTo": 5678,
+            "score": 10,
+            "channel": {
+                "type": "slack",
+                "account": "oscar@chipi.io",
+                "location": [
+                    "chipi",
+                    "#general"
+                ]
+            },
+            "from": {
+                "user": "Sun Tiantian",
+                "account": "sun@chipi.io",
+                "avatar": "010",
+                "company": "Honey & Oats Ltd"
+            },
+            "to": [
+                {
+                    "user": "Oscar",
+                    "account": "oscar@chipi.io",
+                    "avatar": "oscar"
+                }
+            ],
+            "title": "",
+            "excerpt": "Hi Oscar, Just went through your suggestions and I really like them. I think I like esfera better than the other option",
+            "text": "Hi Oscar, Just went through your suggestions and I really like them. I think I like esfera better",
+            "time": 1541323703,
+            "lead": "warm",
+            "comments": "2 days in trial. Contacted 4 days ago."
+        },
+        {
+            "id": 4568,
+            "type": "result",
+            "repliedTo": 5678,
+            "score": 10,
+            "channel": {
+                "type": "gdrive",
+                "account": "oscar@chipi.io",
+                "location": [
+                    "My Drive",
+                    "Design"
+                ]
+            },
+            "from": {
+                "user": "Oscar Otero",
+                "account": "oscar@chipi.io",
+                "avatar": "022",
+                "company": "Honey & Oats Ltd"
+            },
+            "to": [
+                {
+                    "user": "Oscar",
+                    "account": "oscar@chipi.io",
+                    "avatar": "oscar"
+                }
+            ],
+            "title": "Logo.sketch",
+            "excerpt": "Sketch file, 116 Kb",
+            "text": "",
+            "time": 1541323703,
+            "lead": "warm",
+            "comments": "2 days in trial. Contacted 4 days ago."
+        },
+        {
+            "id": 4569,
+            "type": "result",
+            "repliedTo": 5678,
+            "score": 10,
+            "channel": {
+                "type": "gdrive",
+                "account": "oscar@chipi.io",
+                "location": [
+                    "My Drive",
+                    "Design"
+                ]
+            },
+            "from": {
+                "user": "Jing Li",
+                "account": "jing@chipi.io",
+                "avatar": "022",
+                "company": "Honey & Oats Ltd"
+            },
+            "to": [
+                {
+                    "user": "Oscar",
+                    "account": "oscar@chipi.io",
+                    "avatar": "oscar"
+                }
+            ],
+            "title": "Local Development Environment (MAC)",
+            "excerpt": "Google doc file, 116 Kb",
+            "preview": "img/preview/doc.png",
+            "text": "",
+            "time": 1541323703,
+            "lead": "cold",
+            "comments": "2 days in trial. Contacted 4 days ago."
+        }
+    ]
+}

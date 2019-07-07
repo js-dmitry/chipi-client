@@ -1,0 +1,21 @@
+.chipi-lead {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    padding: 0px 5px;
+    color: white;
+    text-transform: capitalize;
+    @extend %font-0;
+}
+
+.chipi-lead-hot {
+    background: red;
+}
+
+.chipi-lead-warm {
+    background-color: orange;
+}
+
+.chipi-lead-cold {
+    background-color: #2aadec;
+}

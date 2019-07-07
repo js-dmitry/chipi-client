@@ -12,12 +12,12 @@
     --max-height: 350px;
 }
 
-.result-time, .preview-info time, .file small, .file-icon {
+.chipi-lead, .result-time, .preview-info time, .file small, .file-icon {
     font-size: 12px;
     line-height: 1.2;
 }
 
-button[is="chipi-command"], chipi-flag button, button[is="chipi-suggestion"], .flags .flags-label, .result-location button, .result-title, .result-description, .preview-info, .file strong {
+button[is="chipi-command"], chipi-flag button, button[is="chipi-suggestion"], .flags .flags-label, .result-location button, .result-title, .result-company, .result-description, .result-comments, .preview-info, .file strong {
     font-size: 15px;
     line-height: 1.2;
 }
@@ -535,6 +535,27 @@ chipi-settings {
             margin-left: 5px;
         }
 
+.chipi-lead {
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    padding: 0px 5px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.chipi-lead-hot {
+    background: red;
+}
+
+.chipi-lead-warm {
+    background-color: orange;
+}
+
+.chipi-lead-cold {
+    background-color: #2aadec;
+}
+
 .help {
     position: relative;
     color: white;
@@ -644,9 +665,9 @@ ul.results > li:nth-child(5) ~ li {
     }
 
 .result-location li + li::before {
-            content: "›";
+            content: '›';
             display: inline-block;
-            margin: 0 .5em;
+            margin: 0 0.5em;
         }
 
 .result-location button {
@@ -676,6 +697,17 @@ ul.results > li:nth-child(5) ~ li {
     text-overflow: ellipsis;
 }
 
+.result-company {
+    grid-area: title;
+    align-self: end;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    text-overflow: ellipsis;
+    color: var(--gray);
+}
+
 .result-time {
     grid-area: time;
     align-self: end;
@@ -693,12 +725,20 @@ ul.results > li:nth-child(5) ~ li {
     text-overflow: ellipsis;
 }
 
-.result-content {
-    grid-area: content;
+.result-comments {
+    grid-area: description;
+    align-self: start;
+    color: var(--gray);
+    white-space: nowrap;
+    margin: 0;
 }
 
-.result-actions {
-    grid-area: actions;
+.result-action {
+    font-weight: bold;
+}
+
+.result-content {
+    grid-area: content;
 }
 
 /* Mode: list */
@@ -707,8 +747,9 @@ ul.results > li:nth-child(5) ~ li {
     height: 60px;
     padding: 0 15px 0 10px;
     display: grid;
-    grid-template-areas: 'service location title time'
-                         'service description description .';
+    grid-template-areas:
+        'service location title time'
+        'service description description .';
     grid-template-columns: 55px auto 1fr auto;
     grid-column-gap: 10px;
     grid-row-gap: 3px;
@@ -725,11 +766,11 @@ ul.results > li:nth-child(5) ~ li {
         color: white
     }
 
-.result.is-list.is-selected .result-location, .result.is-list.is-selected .result-time, .result.is-list.is-selected .result-description, .result.is-list[focus-within] .result-location, .result.is-list[focus-within] .result-time, .result.is-list[focus-within] .result-description {
+.result.is-list.is-selected .result-location, .result.is-list.is-selected .result-company, .result.is-list.is-selected .result-time, .result.is-list.is-selected .result-description, .result.is-list[focus-within] .result-location, .result.is-list[focus-within] .result-company, .result.is-list[focus-within] .result-time, .result.is-list[focus-within] .result-description {
             color: inherit;
         }
 
-.result.is-list.is-selected .result-location, .result.is-list.is-selected .result-time, .result.is-list.is-selected .result-description, .result.is-list:focus-within .result-location, .result.is-list:focus-within .result-time, .result.is-list:focus-within .result-description {
+.result.is-list.is-selected .result-location, .result.is-list.is-selected .result-company, .result.is-list.is-selected .result-time, .result.is-list.is-selected .result-description, .result.is-list:focus-within .result-location, .result.is-list:focus-within .result-company, .result.is-list:focus-within .result-time, .result.is-list:focus-within .result-description {
             color: inherit;
         }
 

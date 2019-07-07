@@ -2,6 +2,7 @@
 import './components/app.js';
 import './components/command.js';
 import './components/flag.js';
+import './components/lead.js';
 import './components/logo.js';
 import './components/navlist.js';
 import './components/panel.js';

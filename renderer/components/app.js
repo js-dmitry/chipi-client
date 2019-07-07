@@ -167,7 +167,7 @@ function renderFlags(search, html) {
 
     return html`
         <nav class="flags">
-            <strong class="flags-label">Available flags</strong>
+            <strong class="flags-label">My lists</strong>
             <ul is="chipi-navlist" class="flags-list is-horizontal" .disabled="${search.panels.length > 0}">
                 ${
                     search.flags.map(

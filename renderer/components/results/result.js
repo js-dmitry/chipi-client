@@ -17,20 +17,20 @@ export default class Result extends Element {
             >
                 <div class="result-service avatar">
                     <img src="img/avatar/${model.from.avatar}.jpg" class="avatar-user" />
-                    <img src="img/logo/${model.channel.type}.svg" class="avatar-service" />
+                    <chipi-lead type="${model.lead}" />
                 </div>
 
                 <nav class="result-location">
                     <ul>
-                        ${model.channel.location.map(val => html`<li><button>${val}</button></li>`)}
+                        <li><button>${model.from.user}</button></li>
                     </ul>
                 </nav>
 
-                <h2 class="result-title" title="${model.title}">${model.title}</h2>
+                <p class="result-company">${model.from.company}</p>
                 <time class="result-time">${new Date(model.time * 1000).toDateString()}</time>
-                <p class="result-description">${model.excerpt}</p>
+                <p class="result-description">${model.comments} <strong>${model.action ? ` - ${model.action}` : ''}</strong></p>
             </article>
-            `;
+        `;
     }
 }
 

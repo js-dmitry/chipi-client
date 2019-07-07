@@ -35,9 +35,9 @@
 
     & li + li {
         &::before {
-            content: "›";
+            content: '›';
             display: inline-block;
-            margin: 0 .5em;
+            margin: 0 0.5em;
         }
     }
 
@@ -68,6 +68,17 @@
     margin: 0;
     text-overflow: ellipsis;
 }
+.result-company {
+    grid-area: title;
+    align-self: end;
+    margin: 0;
+    @extend %font-1;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    text-overflow: ellipsis;
+    color: var(--gray);
+}
 .result-time {
     grid-area: time;
     align-self: end;
@@ -85,14 +96,20 @@
     margin: 0;
     text-overflow: ellipsis;
 }
-
+.result-comments {
+    grid-area: description;
+    align-self: start;
+    @extend %font-1;
+    color: var(--gray);
+    white-space: nowrap;
+    margin: 0;
+}
+.result-action {
+    font-weight: bold;
+}
 .result-content {
     @extend %font-2;
     grid-area: content;
-}
-
-.result-actions {
-    grid-area: actions;
 }
 
 /* Mode: list */
@@ -100,8 +117,9 @@
     height: 60px;
     padding: 0 15px 0 10px;
     display: grid;
-    grid-template-areas: 'service location title time'
-                         'service description description .';
+    grid-template-areas:
+        'service location title time'
+        'service description description .';
     grid-template-columns: 55px auto 1fr auto;
     grid-column-gap: 10px;
     grid-row-gap: 3px;
@@ -113,6 +131,7 @@
         color: white;
 
         & .result-location,
+        & .result-company,
         & .result-time,
         & .result-description {
             color: inherit;
