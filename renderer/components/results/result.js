@@ -27,7 +27,7 @@ export default class Result extends Element {
                 </nav>
 
                 <p class="result-company">${model.from.company}</p>
-                <time class="result-time">${new Date(model.time * 1000).toDateString()}</time>
+                <time class="result-time">Last login ${model.login}</time>
                 <p class="result-description">${model.comments} <strong>${model.action ? ` - ${model.action}` : ''}</strong></p>
             </article>
         `;

@@ -13,6 +13,7 @@ import './components/session.js';
 import './components/viewer.js';
 import './components/results/suggestion.js';
 import './components/results/result.js';
+import './components/results/command.js';
 import './components/details/slack.js';
 import './components/details/gmail.js';
 import './components/details/trello.js';

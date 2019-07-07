@@ -1,5 +1,11 @@
 export function fetchResults(query) {
-    return query ? api('sales-results') : api('suggestions');
+    if (!query) {
+        return api('suggestions');
+    } else if (query === "/") {
+        return api('commands');
+    } else {
+        return api('sales-results');
+    }
 }
 
 export function fetchResult(id) {

@@ -201,6 +201,11 @@ function renderResults(search, html) {
                             return html`
                                 <li><chipi-result .model="${item}"></chipi-result></li>
                             `;
+
+                        case 'command':
+                            return html`
+                                <li><button is="chipi-command-listitem" .model="${item}"></button></li>
+                            `;
                     }
                 })
             }

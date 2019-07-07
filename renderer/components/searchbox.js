@@ -6,6 +6,20 @@ import { replaceQuery, loadSuggestions, loadResults } from '../actions/search.js
  * Chipi searchbox, with flags and autocomplete
  */
 export default class Searchbox extends Element {
+    connectedCallback() {
+        // wait for half a second and fetch the results
+        setTimeout(() => {
+            this.autocomplete = ':today';
+            this.store.dispatch(replaceQuery(filter(':today')));
+            this.store.dispatch(loadResults());
+        }, 500);
+
+        // make sure we are connected to the store
+        this.store.subscribe(() => this.subscribe());
+
+        this.update();
+    }
+
     focus() {
         this.querySelector('.searchbox-input').focus();
     }
@@ -85,7 +99,8 @@ export default class Searchbox extends Element {
     }
 
     get value() {
-        return this.querySelector('.searchbox-input').value;
+        const inpt = this.querySelector('.searchbox-input');
+        return inpt.value;
     }
 
     render(html) {
@@ -103,7 +118,7 @@ export default class Searchbox extends Element {
                 }"
             >
                 <textarea
-                    placeholder="Hi, ${user.name}. What are you looking for?"
+                    placeholder="Hi, ${user.name}. Either run the day or the day runs you."
                     class="searchbox-input js-focus"
                     .value="${search.query}"
                     name="q"
@@ -148,6 +163,11 @@ export default class Searchbox extends Element {
                             // this.value = e.target.value;
                             this.autocomplete = 'design';
                             this.store.dispatch(replaceQuery(filter(e.target.value)));
+
+                            // list the commands if the input was "/"
+                            if (e.target.value === '/') {
+                                this.store.dispatch(loadResults());
+                            }
                         }
                     }"
                 ></textarea>

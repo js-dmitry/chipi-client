@@ -1,0 +1,20 @@
+{
+    "flags": [":today", ":unread"],
+    "results": [
+        {
+            "type": "command",
+            "title": "/call_back",
+            "description": "@lead [date]"
+        },
+        {
+            "type": "command",
+            "title": "/set",
+            "description": "@lead [status]"
+        },
+        {
+            "type": "command",
+            "title": "/send_promo",
+            "description": "@lead [promo code]"
+        }
+    ]
+}

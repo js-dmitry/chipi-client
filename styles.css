@@ -17,7 +17,7 @@
     line-height: 1.2;
 }
 
-button[is="chipi-command"], chipi-flag button, button[is="chipi-suggestion"], .flags .flags-label, .result-location button, .result-title, .result-company, .result-description, .result-comments, .preview-info, .file strong {
+button[is="chipi-command"], chipi-flag button, button[is="chipi-suggestion"], button[is='chipi-command-listitem'], .flags .flags-label, .result-location button, .result-title, .result-company, .result-description, .result-comments, .preview-info, .file strong {
     font-size: 15px;
     line-height: 1.2;
 }
@@ -222,6 +222,28 @@ button[is="chipi-suggestion"] path, button[is="chipi-suggestion"] circle {
     }
 
 button[is="chipi-suggestion"].is-selected, button[is="chipi-suggestion"]:focus {
+        background-color: var(--blue);
+        color: white;
+        --icon-opacity: 1;
+    }
+
+button[is='chipi-command-listitem'] {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    cursor: default;
+    padding: 0 15px;
+    color: var(--black);
+    outline: 0;
+    transition-property: color, background-color;
+    transition-duration: 0.15s;
+    box-sizing: border-box;
+    width: 100%;
+    background: none;
+    border: none
+}
+
+button[is='chipi-command-listitem'].is-selected, button[is='chipi-command-listitem']:focus {
         background-color: var(--blue);
         color: white;
         --icon-opacity: 1;

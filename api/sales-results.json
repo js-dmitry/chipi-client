@@ -37,7 +37,8 @@
             "time": 1541323703,
             "lead": "hot",
             "action": "Call schedulled for today",
-            "comments": "2 days in trial. Contacted 4 days ago."
+            "comments": "2 days in trial. Contacted 4 days ago.",
+            "login": "yesterday"
         },
         {
             "id": 1235,
@@ -72,7 +73,8 @@
             "time": 1541313703,
             "lead": "hot",
             "action": "Call schedulled for today",
-            "comments": "2 days in trial. Contacted 4 days ago."
+            "comments": "12 days in trial. Contacted 6 days ago.",
+            "login": "2 days ago"
         },
         {
             "id": 4567,
@@ -105,7 +107,8 @@
             "text": "Hi Oscar, Just went through your suggestions and I really like them. I think I like esfera better",
             "time": 1541323703,
             "lead": "warm",
-            "comments": "2 days in trial. Contacted 4 days ago."
+            "comments": "5 days in trial. Contacted 8 days ago.",
+            "login": "3 days ago"
         },
         {
             "id": 4568,
@@ -138,7 +141,8 @@
             "text": "",
             "time": 1541323703,
             "lead": "warm",
-            "comments": "2 days in trial. Contacted 4 days ago."
+            "comments": "28 days in trial. Contacted 8 days ago.",
+            "login": "5 days ago"
         },
         {
             "id": 4569,
@@ -172,7 +176,8 @@
             "text": "",
             "time": 1541323703,
             "lead": "cold",
-            "comments": "2 days in trial. Contacted 4 days ago."
+            "comments": "2 days in trial. Contacted 4 days ago.",
+            "login": "28 days ago"
         }
     ]
 }
