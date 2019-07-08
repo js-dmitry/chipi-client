@@ -90,13 +90,26 @@
         }
     }
 
-    & p.contact-detail {
+
+    & .contact-detail {
         margin: 5px 0px;
-        color: var(--gray);
+        display: flex;
+        align-items: center;
+
+        & .contact-detail-label {
+            flex-grow: 1;
+            color: var(--gray);
+        }
     }
 
     & p.comments {
         color: var(--gray);
+    }
+
+    & .tick {
+        width: 18px;
+        height: 18px;
+        fill: var(--gray);
     }
 }
 .task-label {

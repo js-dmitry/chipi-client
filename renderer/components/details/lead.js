@@ -8,12 +8,12 @@ export default class Lead extends Detail {
                 cmd: 'Enter'
             },
             {
-                text: 'Copy Message',
-                cmd: '⌘C'
+                text: 'Send an Email',
+                cmd: '⌘E'
             },
             {
-                text: 'Copy Link',
-                cmd: '⌘L'
+                text: 'Set to Commit',
+                cmd: '⌘M'
             },
             {
                 text: 'Send to...',
@@ -35,9 +35,16 @@ export default class Lead extends Detail {
                         <div class="company">
                             <img class="service" src="img/logo/linkedin.svg" />
                             <a href="https://www.linkedin.com/in/carlos-seguin-lozano/" target="_blank" class="preview-link">Manager at ${this.model.from.company}</a>
+                            <img class="tick" src="img/icon/tick.svg" />
                         </div>
-                        <p class="contact-detail">${this.model.from.account}</p>
-                        <p class="contact-detail">${this.model.from.phone}</p>
+                        <div class="contact-detail">
+                            <div class="contact-detail-label">${this.model.from.account}</div>
+                            <img class="tick" src="img/icon/tick.svg" />
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-label">${this.model.from.phone}</div>
+                            <img class="tick" src="img/icon/tick.svg" />
+                        </div>
                         <p class="comments">${this.model.comments}<br />last login ${this.model.login}</p>
                     </div>
                 </div>

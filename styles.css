@@ -249,6 +249,11 @@ button[is='chipi-command-listitem'].is-selected, button[is='chipi-command-listit
         --icon-opacity: 1;
     }
 
+.chipi-command-tag {
+    color: var(--gray);
+    margin-left: 5px;
+}
+
 chipi-session img {
         border-radius: 5px;
         width: 50px;
@@ -944,13 +949,25 @@ ul.results > li:nth-child(5) ~ li {
         }
     }
 
-.preview-info p.contact-detail {
+.preview-info .contact-detail {
         margin: 5px 0px;
-        color: var(--gray);
+        display: flex;
+        align-items: center
     }
+
+.preview-info .contact-detail .contact-detail-label {
+            flex-grow: 1;
+            color: var(--gray);
+        }
 
 .preview-info p.comments {
         color: var(--gray);
+    }
+
+.preview-info .tick {
+        width: 18px;
+        height: 18px;
+        fill: var(--gray);
     }
 
 .task-label {

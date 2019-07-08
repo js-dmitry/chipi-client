@@ -21,3 +21,8 @@ button[is='chipi-command-listitem'] {
         --icon-opacity: 1;
     }
 }
+
+.chipi-command-tag {
+    color: var(--gray);
+    margin-left: 5px;
+}

@@ -13,7 +13,7 @@ export default class Command extends Button {
 
     render(html) {
         return html`
-            ${this.model.title} ${this.model.description}
+            <strong>${this.model.title}</strong><span class="chipi-command-tag">${this.model.description}</span>
         `;
     }
 }
